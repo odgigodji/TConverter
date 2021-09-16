@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOS-stock-33-for-iPhone-X-768x1663" translatesAutoresizingMaskIntoConstraints="NO" id="v3T-pN-Y4K">
-                                <rect key="frame" x="0.0" y="0.0" width="812" height="384"/>
+                                <rect key="frame" x="-44" y="0.0" width="755" height="405"/>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vxo-EG-3pV">
-                                <rect key="frame" x="260" y="162" width="292" height="31"/>
+                                <rect key="frame" x="187.5" y="172.5" width="292" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="NRC-l9-Ldz"/>
                                     <constraint firstAttribute="width" constant="288" id="Rbr-mu-ZIV"/>
@@ -49,20 +49,20 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drL-cw-FGP">
-                                <rect key="frame" x="375" y="97" width="62" height="45"/>
+                                <rect key="frame" x="302.5" y="107.5" width="62" height="45"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-JE-H2Z">
-                                <rect key="frame" x="367.66666666666669" y="212" width="77" height="45"/>
+                                <rect key="frame" x="295" y="222.5" width="77" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T- Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="EAH-JH-Nmj">
-                                <rect key="frame" x="500" y="20" width="258" height="54.666666666666657"/>
+                                <rect key="frame" x="366.5" y="20" width="290.5" height="54.5"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="43"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -99,6 +99,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstItem="vxo-EG-3pV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Wqt-7p-nln"/>
+                            <constraint firstItem="EAH-JH-Nmj" firstAttribute="leading" secondItem="drL-cw-FGP" secondAttribute="trailing" constant="2.3333333333332575" id="Z1C-xo-Y2T">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="drL-cw-FGP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Zqa-Am-Jdb"/>
                             <constraint firstItem="EAH-JH-Nmj" firstAttribute="leading" secondItem="vxo-EG-3pV" secondAttribute="trailing" constant="-50" id="bNa-Fc-RDg"/>
                             <constraint firstItem="vxo-EG-3pV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bVn-lQ-6Ki"/>
@@ -108,6 +111,7 @@
                             <constraint firstItem="vxo-EG-3pV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nTO-bz-KkB"/>
                             <constraint firstItem="EAH-JH-Nmj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oMb-Ya-xu5"/>
                             <constraint firstItem="drL-cw-FGP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vZL-K7-6pc"/>
+                            <constraint firstItem="EAH-JH-Nmj" firstAttribute="leading" secondItem="drL-cw-FGP" secondAttribute="trailing" constant="2" id="zqd-P3-mIC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
@@ -136,8 +140,10 @@
                                 <exclude reference="0Fm-Kj-7sU"/>
                                 <exclude reference="90B-ud-38Y"/>
                                 <exclude reference="PJ4-eQ-67V"/>
+                                <exclude reference="Z1C-xo-Y2T"/>
                                 <exclude reference="bNa-Fc-RDg"/>
                                 <exclude reference="oMb-Ya-xu5"/>
+                                <exclude reference="zqd-P3-mIC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -153,8 +159,28 @@
                                 <include reference="Uik-lP-jF1"/>
                                 <include reference="iLk-7I-kFR"/>
                                 <include reference="PJ4-eQ-67V"/>
-                                <include reference="bNa-Fc-RDg"/>
+                                <exclude reference="Z1C-xo-Y2T"/>
+                                <exclude reference="bNa-Fc-RDg"/>
                                 <include reference="oMb-Ya-xu5"/>
+                                <include reference="zqd-P3-mIC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="CoT-v2-hYJ"/>
+                                <include reference="DLa-LH-hf8"/>
+                                <include reference="J2j-A4-ywM"/>
+                                <include reference="irE-6k-5c8"/>
+                                <include reference="2Ui-kb-0nH"/>
+                                <include reference="UWg-CM-aYk"/>
+                                <include reference="nTO-bz-KkB"/>
+                                <include reference="vZL-K7-6pc"/>
+                                <include reference="Uik-lP-jF1"/>
+                                <include reference="iLk-7I-kFR"/>
+                                <include reference="PJ4-eQ-67V"/>
+                                <include reference="Z1C-xo-Y2T"/>
+                                <include reference="oMb-Ya-xu5"/>
+                                <include reference="zqd-P3-mIC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -187,6 +213,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iOS-stock-33-for-iPhone-X-768x1663" width="256" height="554.33331298828125"/>
+        <image name="iOS-stock-33-for-iPhone-X-768x1663" width="256" height="554.5"/>
     </resources>
 </document>
