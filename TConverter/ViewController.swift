@@ -14,10 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var farenheitLabel: UILabel!
     @IBOutlet weak var slider: UISlider!
     
-    @IBAction func sliderChanged(_ sender: Any) {
-        
+    @IBAction func sliderChanged(_ sender: UISlider) {
+//        for _ in slider.
     }
     
 
 }
 
+/*
+ https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/
+ */
