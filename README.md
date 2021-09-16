@@ -4,3 +4,5 @@
 Мини приложение для конвертации температуры по цельсию в фаренгейты.
 
 На основе этого приложения я подробно разобрал constraints: 
+
+[!about size classes](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/)
