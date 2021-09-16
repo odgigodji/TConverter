@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -68,13 +68,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-JE-H2Z">
-                                <rect key="frame" x="168.66666666666666" y="483" width="77" height="45"/>
+                                <rect key="frame" x="168.5" y="483" width="77" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T- Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="EAH-JH-Nmj">
-                                <rect key="frame" x="47.666666666666629" y="85" width="318.66666666666674" height="54.666666666666657"/>
+                                <rect key="frame" x="48" y="85" width="318.5" height="54.5"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="43"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -145,6 +145,8 @@
                                 <exclude reference="Z1C-xo-Y2T"/>
                                 <exclude reference="bNa-Fc-RDg"/>
                                 <exclude reference="oMb-Ya-xu5"/>
+                                <exclude reference="Zqa-Am-Jdb"/>
+                                <exclude reference="vZL-K7-6pc"/>
                                 <exclude reference="2Ui-kb-0nH"/>
                                 <exclude reference="Ffi-6J-NqM"/>
                                 <exclude reference="Rzz-zK-ugI"/>
@@ -152,8 +154,6 @@
                                 <exclude reference="Wqt-7p-nln"/>
                                 <exclude reference="bVn-lQ-6Ki"/>
                                 <exclude reference="nTO-bz-KkB"/>
-                                <exclude reference="Zqa-Am-Jdb"/>
-                                <exclude reference="vZL-K7-6pc"/>
                                 <exclude reference="Uik-lP-jF1"/>
                                 <exclude reference="V85-Tq-VDK"/>
                                 <exclude reference="gqh-lH-yy4"/>
@@ -171,10 +171,10 @@
                                 <exclude reference="Z1C-xo-Y2T"/>
                                 <exclude reference="bNa-Fc-RDg"/>
                                 <include reference="oMb-Ya-xu5"/>
+                                <include reference="vZL-K7-6pc"/>
                                 <include reference="2Ui-kb-0nH"/>
                                 <include reference="UWg-CM-aYk"/>
                                 <include reference="nTO-bz-KkB"/>
-                                <include reference="vZL-K7-6pc"/>
                                 <include reference="Uik-lP-jF1"/>
                                 <include reference="iLk-7I-kFR"/>
                             </mask>
@@ -189,10 +189,10 @@
                                 <include reference="XYl-Gz-tnv"/>
                                 <exclude reference="Z1C-xo-Y2T"/>
                                 <include reference="oMb-Ya-xu5"/>
+                                <include reference="vZL-K7-6pc"/>
                                 <include reference="2Ui-kb-0nH"/>
                                 <include reference="UWg-CM-aYk"/>
                                 <include reference="nTO-bz-KkB"/>
-                                <include reference="vZL-K7-6pc"/>
                                 <include reference="Uik-lP-jF1"/>
                                 <include reference="iLk-7I-kFR"/>
                             </mask>
@@ -205,11 +205,11 @@
                                 <include reference="U4w-gG-Iuo"/>
                                 <include reference="0Fm-Kj-7sU"/>
                                 <include reference="90B-ud-38Y"/>
+                                <include reference="Zqa-Am-Jdb"/>
                                 <include reference="Ffi-6J-NqM"/>
                                 <include reference="Rzz-zK-ugI"/>
                                 <include reference="Wqt-7p-nln"/>
                                 <include reference="bVn-lQ-6Ki"/>
-                                <include reference="Zqa-Am-Jdb"/>
                                 <include reference="V85-Tq-VDK"/>
                                 <include reference="gqh-lH-yy4"/>
                             </mask>
@@ -222,18 +222,18 @@
                                 <include reference="U4w-gG-Iuo"/>
                                 <include reference="0Fm-Kj-7sU"/>
                                 <include reference="90B-ud-38Y"/>
+                                <include reference="Zqa-Am-Jdb"/>
                                 <include reference="Ffi-6J-NqM"/>
                                 <include reference="Rzz-zK-ugI"/>
                                 <include reference="Wqt-7p-nln"/>
                                 <include reference="bVn-lQ-6Ki"/>
-                                <include reference="Zqa-Am-Jdb"/>
                                 <include reference="V85-Tq-VDK"/>
                                 <include reference="gqh-lH-yy4"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="celiusLabel" destination="drL-cw-FGP" id="YVj-a3-mUo"/>
+                        <outlet property="celsiusLabel" destination="drL-cw-FGP" id="rjh-cU-u6M"/>
                         <outlet property="farenheitLabel" destination="cvb-JE-H2Z" id="yXv-fg-ghf"/>
                         <outlet property="slider" destination="vxo-EG-3pV" id="F4L-NV-L2u"/>
                     </connections>
@@ -244,6 +244,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iOS-stock-33-for-iPhone-X-768x1663" width="256" height="554.33331298828125"/>
+        <image name="iOS-stock-33-for-iPhone-X-768x1663" width="256" height="554.5"/>
     </resources>
 </document>
