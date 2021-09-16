@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,21 +12,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOS-stock-33-for-iPhone-X-768x1663" translatesAutoresizingMaskIntoConstraints="NO" id="v3T-pN-Y4K">
-                                <rect key="frame" x="0.0" y="0.0" width="421" height="911"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="iOS-stock-33-for-iPhone-X-768x1663" translatesAutoresizingMaskIntoConstraints="NO" id="v3T-pN-Y4K">
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="827"/>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vxo-EG-3pV">
-                                <rect key="frame" x="61" y="433" width="292" height="31"/>
+                                <rect key="frame" x="260" y="162" width="292" height="31"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="NRC-l9-Ldz"/>
+                                    <constraint firstAttribute="width" constant="288" id="Rbr-mu-ZIV"/>
                                     <constraint firstAttribute="width" constant="288" id="ghQ-mS-F6s"/>
                                 </constraints>
                                 <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="NRC-l9-Ldz"/>
+                                        <exclude reference="Rbr-mu-ZIV"/>
                                         <exclude reference="ghQ-mS-F6s"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="NRC-l9-Ldz"/>
+                                        <include reference="Rbr-mu-ZIV"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -38,21 +48,21 @@
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="VRr-Mg-u0M"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T- Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAH-JH-Nmj">
-                                <rect key="frame" x="47.666666666666657" y="85" width="319" height="54.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="T- Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAH-JH-Nmj">
+                                <rect key="frame" x="28" y="85" width="319" height="54.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="43"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drL-cw-FGP">
-                                <rect key="frame" x="176" y="368" width="62" height="45"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-JE-H2Z">
+                                <rect key="frame" x="149" y="441" width="77" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-JE-H2Z">
-                                <rect key="frame" x="168.66666666666666" y="483" width="77" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drL-cw-FGP">
+                                <rect key="frame" x="156.66666666666666" y="326" width="62" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -72,6 +82,7 @@
                             <constraint firstItem="v3T-pN-Y4K" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="49" id="Qmg-DP-qUz"/>
                             <constraint firstItem="vxo-EG-3pV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rzz-zK-ugI"/>
                             <constraint firstItem="v3T-pN-Y4K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="U4w-gG-Iuo"/>
+                            <constraint firstItem="vxo-EG-3pV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="UWg-CM-aYk"/>
                             <constraint firstItem="cvb-JE-H2Z" firstAttribute="top" secondItem="vxo-EG-3pV" secondAttribute="bottom" constant="8" id="V85-Tq-VDK">
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
@@ -79,6 +90,7 @@
                             <constraint firstItem="drL-cw-FGP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Zqa-Am-Jdb"/>
                             <constraint firstItem="vxo-EG-3pV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bVn-lQ-6Ki"/>
                             <constraint firstItem="cvb-JE-H2Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gqh-lH-yy4"/>
+                            <constraint firstItem="vxo-EG-3pV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nTO-bz-KkB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
@@ -92,10 +104,18 @@
                                 <exclude reference="Zqa-Am-Jdb"/>
                                 <exclude reference="Ffi-6J-NqM"/>
                                 <exclude reference="Rzz-zK-ugI"/>
+                                <exclude reference="UWg-CM-aYk"/>
                                 <exclude reference="Wqt-7p-nln"/>
                                 <exclude reference="bVn-lQ-6Ki"/>
+                                <exclude reference="nTO-bz-KkB"/>
                                 <exclude reference="V85-Tq-VDK"/>
                                 <exclude reference="gqh-lH-yy4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="UWg-CM-aYk"/>
+                                <include reference="nTO-bz-KkB"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -124,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65.625" y="137.5"/>
+            <point key="canvasLocation" x="-65.763546798029566" y="136.80000000000001"/>
         </scene>
     </scenes>
     <resources>
