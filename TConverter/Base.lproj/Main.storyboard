@@ -50,6 +50,11 @@
                                         <include reference="ghQ-mS-F6s"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ghQ-mS-F6s"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="VRr-Mg-u0M"/>
                                 </connections>
@@ -62,13 +67,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-JE-H2Z">
-                                <rect key="frame" x="168.66666666666666" y="483" width="77" height="45"/>
+                                <rect key="frame" x="168.66666666666663" y="483" width="77" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T- Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="EAH-JH-Nmj">
-                                <rect key="frame" x="47.666666666666657" y="85" width="319" height="54.666666666666657"/>
+                                <rect key="frame" x="47.666666666666629" y="85" width="319" height="54.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="43"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -192,6 +197,23 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Q4e-jT-DlL"/>
+                                <include reference="1Ut-ot-kiO"/>
+                                <include reference="Qmg-DP-qUz"/>
+                                <include reference="U4w-gG-Iuo"/>
+                                <include reference="0Fm-Kj-7sU"/>
+                                <include reference="90B-ud-38Y"/>
+                                <include reference="Ffi-6J-NqM"/>
+                                <include reference="Rzz-zK-ugI"/>
+                                <include reference="Wqt-7p-nln"/>
+                                <include reference="bVn-lQ-6Ki"/>
+                                <include reference="Zqa-Am-Jdb"/>
+                                <include reference="V85-Tq-VDK"/>
+                                <include reference="gqh-lH-yy4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
                                 <include reference="Q4e-jT-DlL"/>
                                 <include reference="1Ut-ot-kiO"/>
