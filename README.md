@@ -6,5 +6,5 @@
 На основе этого приложения я подробно разобрал constraints: 
 Реализовал вертикальную и горизонтальную ориентацию на всех устройствах от Iphone-4s до Ipad'a.
 
-##Resourses:
+## Resourses:
 [About size classes](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/)
