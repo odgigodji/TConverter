@@ -15,10 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider! {
         didSet {
             slider.maximumValue = 100
-            slider.minimumValue = 0
+            slider.minimumValue = -100
             slider.value = 0
         }
     }
+    
     
     @IBAction func sliderChanged(_ sender: UISlider) {
         let temperatureC = Int(round(sender.value))
@@ -27,8 +28,12 @@ class ViewController: UIViewController {
         let temperatureF = Int(round((sender.value * 9 / 5) + 32))
         farenheitLabel.text = "\(temperatureF)ºF"
     }
-    
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        slider.value = 0
+        celsiusLabel.text = "0ºC"
+        farenheitLabel.text = "32ºF"
+    }
 }
 
 /*

@@ -18,7 +18,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOS-stock-33-for-iPhone-X-768x1663" translatesAutoresizingMaskIntoConstraints="NO" id="v3T-pN-Y4K">
                                 <rect key="frame" x="0.0" y="0.0" width="421" height="911"/>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vxo-EG-3pV">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-50" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="vxo-EG-3pV">
                                 <rect key="frame" x="61" y="433" width="292" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="NRC-l9-Ldz"/>
